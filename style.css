@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  font-family: "Darumadrop One", "Gill Sans", Calibri, sans-serif;
+}
+
+body {
+  background-color: #fff5e6;
+  background-image: radial-gradient(#ffd166 1px, transparent 1px),
+    radial-gradient(#ff9466 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Name Modal Styles */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal-content h2 {
+  color: #ff2d75;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.modal-content p {
+  color: #6a4c93;
+  margin-bottom: 1rem;
+  opacity: 1;
+  background-color: #fff;
+}
+
+.modal-content input {
+  padding: 0.8rem;
+  width: 80%;
+  margin: 1rem 0;
+  border: 2px solid #00c1b3;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Main Content Style */
+.mascot img {
+  max-width: 200px;
+  height: auto;
+}
+
+.title {
+  font-size: 3.7rem;
+  color: #ff2d75;
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.dscr {
+  font-size: 1.7rem;
+  color: #00c1b3;
+  margin-bottom: 0.5rem;
+}
+
+pre {
+  font-size: 1.2rem;
+  color: #6a4c93;
+}
+
+p {
+  opacity: 0.6;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fcfcfc;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ffd166;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #333;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 150%;
+  background-color: #ff9466;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+/* New Styles */
+.mascot {
+  font-size: 3rem;
+  margin: 1rem 0;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+#compliment {
+  transition: all 0.3s ease;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.counter {
+  margin: 1rem 0;
+  color: #6a4c93;
+  font-size: 1.1rem;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.share-btn {
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+}
+
+.twitter {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.copy {
+  background-color: #6a4c93;
+  color: white;
+}
+
+.about-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h3 {
+  color: #ff2d75;
+  margin-bottom: 0.5rem;
+}
+
+.follow-section {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.follow-section h3 {
+  color: #ff2d75;
+  margin-bottom: 0.8rem;
+  white-space: nowrap;
+  display: inline;
+  gap: 5px;
+}
+
+.follow-container {
+  display: flex;
+}
+
+.follow-container img {
+  display: inline;
+  width: 80px;
+  height: auto;
+  transform: translateY(8px);
+}
+
+.github,
+.instagram {
+  margin-top: 1rem;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+  font-size: 1rem;
+}
+
+.instagram:hover {
+  transform: translateY(-3px);
+}
+
+.instagram {
+  background: #ff7dbc;
+  color: white;
+}
+
+.github {
+  background: #111;
+  color: white;
+}
+
+.github:hover {
+  transform: translateY(-3px);
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  color: #6a4c93;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .dscr {
+    font-size: 1.3rem;
+  }
+
+  pre {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.8em 1.6em;
+    font-size: 14px;
+  }
+
+  #compliment {
+    font-size: 24px;
+    min-height: 80px;
+    padding: 0 15px;
+  }
+
+  .about-section {
+    padding: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .follow-section h3 {
+    white-space: normal;
+    display: block;
+    text-align: center;
+  }
+
+  .share-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+    background-size: 30px 30px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .dscr {
+    font-size: 1.1rem;
+  }
+
+  #compliment {
+    font-size: 1.4rem;
+    min-height: 60px;
+  }
+
+  .btn {
+    padding: 0.7em 1.4em;
+    font-size: 13px;
+  }
+
+  .mascot img {
+    max-width: 160px;
+  }
+
+  .counter {
+    font-size: 0.9rem;
+  }
+
+  .about-section {
+    padding: 0.8rem;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .modal-content input {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+
+/* Prevent text from overflowing on small devices */
+#compliment,
+.about-section p,
+.follow-section h3 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Adjust modal for small screens */
+@media screen and (max-width: 400px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content p {
+    font-size: 0.9rem;
+  }
+
+  .mascot img {
+    max-width: 150px;
+  }
+
+  #compliment {
+    max-width: 320px;
+  }
+
+  .about-section {
+    max-width: 320px;
+  }
+
+  .follow-section {
+    max-width: 340px;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  body {
+    padding: 5px;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin: 0.2rem;
+  }
+
+  .mascot {
+    margin: 0.5rem 0;
+  }
+
+  .btn {
+    padding: 0.5em 1em;
+    margin-top: 0.5rem;
+  }
+
+  #compliment {
+    min-height: 40px;
+    font-size: 10px;
+  }
+
+  .counter {
+    margin: 0.5rem 0;
+  }
+
+  .about-section,
+  .follow-section {
+    margin: 0.5rem auto;
+    padding: 0.7rem;
+  }
+}
