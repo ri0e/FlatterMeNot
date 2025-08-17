@@ -18,26 +18,46 @@
       </div>
     </div>
 
+    <div class="language-selector">
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="ru">Русский</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
+
     <!-- Main Content -->
     <div id="mainContent" class="hidden">
       <h1 class="title">FlatterMeNot!</h1>
-      <div class="mascot"><img src="1.png" alt="kaomoji" /></div>
+      <div class="mascot"><img src="1.png" alt="Kaomoji mascot" /></div>
       <h3 class="dscr">Get a Sassy Compliment >⩊<</h3>
-      <pre class="urComp"><p id="userGreeting"></p>Your Compliment is:</pre>
+      <pre
+        class="urComp"
+      ><p id="userGreeting"></p><span id="complimentPrompt">Your Compliment is:</span></pre>
       <p id="compliment">click the button to get a sassy compliment</p>
-      <div class="counter">Compliments received: <span id="count">0</span></div>
-      <button class="btn" onclick="randomCompliment();">Compliment Me</button>
+      <div class="counter">
+        <span id="counterText">Compliments received:</span>
+        <span id="count">0</span>
+      </div>
+      <div class="level-selector">
+        <select id="levelSelect">
+          <option value="light">Light Sass</option>
+          <option value="medium">Medium Sass</option>
+          <option value="heavy">Heavy Sass</option>
+        </select>
+      </div>
+      <button class="btn" id="complimentButton">Compliment Me</button>
 
       <div class="share-buttons">
-        <button onclick="shareOnTwitter()" class="share-btn twitter">
-          Tweet
-        </button>
-        <button onclick="copyToClipboard()" class="share-btn copy">Copy</button>
+        <button id="twitterButton" class="share-btn twitter">Tweet</button>
+        <button id="copyButton" class="share-btn copy">Copy</button>
       </div>
 
       <div class="about-section">
-        <h3>About FlatterMeNot!</h3>
-        <p>
+        <h3 id="aboutTitle">About FlatterMeNot!</h3>
+        <p id="aboutText">
           We specialize in backhanded compliments that make you question if you
           should feel good or insulted. Enjoy!
         </p>
@@ -45,27 +65,15 @@
 
       <div class="follow-section">
         <div class="follow-container">
-          <h3>
-            Follow Me for More Sass— I Mean Content hehe
-            <img src="2.png" alt="kaomoji" />
-          </h3>
+          <h3 id="followTitle">Follow Us for More Sass— I Mean Content hehe</h3>
         </div>
-        <button
-          onclick="window.open('https://www.instagram.com/re139ii/')"
-          class="instagram"
-        >
-          Instagram
-        </button>
-        <button onclick="window.open('https://github.com/ri0e')" class="github">
-          GitHub
-        </button>
+        <button class="instagram" id="instagramButton">Instagram</button>
+        <button class="github" id="githubButton">GitHub</button>
       </div>
 
       <footer>
-        <p>Made with ❤️ and sarcasm | © 2025 FlatterMeNot!</p>
+        <p id="footerText">Made with ❤️ and sarcasm | © 2025 FlatterMeNot!</p>
       </footer>
     </div>
   </body>
 </html>
-
-
