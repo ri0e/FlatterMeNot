@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@400;700&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -9,7 +9,6 @@
   align-items: center;
   flex-direction: column;
   height: fit-content;
-  font-family: "Darumadrop One", "Gill Sans", Calibri, sans-serif;
 }
 
 body {
@@ -48,15 +47,16 @@ body {
 
 .modal-content h2 {
   color: #ff2d75;
-  margin-bottom: 1rem;
   background-color: #fff;
+  margin-bottom: 1rem;
+  font-family: "Darumadrop One";
 }
 
 .modal-content p {
   color: #6a4c93;
-  margin-bottom: 1rem;
-  opacity: 1;
   background-color: #fff;
+  opacity: 1;
+  margin-bottom: 1rem;
 }
 
 .modal-content input {
@@ -79,10 +79,32 @@ body {
   height: auto;
 }
 
+.language-selector,
+.level-selector {
+  margin: 0.5rem 0;
+}
+
+.language-selector select,
+.level-selector select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #00c1b3;
+  background-color: white;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.language-selector select {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .title {
   font-size: 3.7rem;
+  font-family: "Darumadrop One", cursive;
   color: #ff2d75;
-  margin-top: 0.8rem;
+  top: 0%;
   margin-bottom: 0.6rem;
 }
 
@@ -92,29 +114,32 @@ body {
   margin-bottom: 0.5rem;
 }
 
-pre {
+.urComp {
   font-size: 1.2rem;
   color: #6a4c93;
+  font-family: inherit;
 }
 
-p {
+#userGreeting {
   opacity: 0.6;
+  font-family: inherit;
 }
 
 .btn {
   margin-top: 1rem;
   padding: 1.1em 2em;
   background: none;
-  border: 2px solid #fcfcfc;
-  font-size: 15px;
   color: #131313;
+  border: 2px solid #fcfcfc;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: bolder;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.3s;
-  border-radius: 12px;
   background-color: #ffd166;
-  font-weight: bolder;
   box-shadow: 0 2px 0 2px #333;
 }
 
@@ -144,13 +169,31 @@ p {
   transform: scale(0.9);
 }
 
-/* New Styles */
 .mascot {
   font-size: 3rem;
   margin: 1rem 0;
   animation: bounce 2s infinite;
 }
 
+/* More specific font application */
+[lang="en"] body,
+[lang="es"] body,
+[lang="fr"] body {
+  font-family: "Darumadrop One", sans-serif !important;
+  font-weight: bold;
+}
+
+[lang="zh"] body {
+  font-family: "Darumadrop One", cursive !important;
+  font-weight: bold;
+}
+
+[lang="ru"] body {
+  font-family: "Darumadrop One", cursive !important;
+  font-weight: bold;
+}
+
+/* Bounce animation */
 @keyframes bounce {
   0%,
   100% {
@@ -161,6 +204,26 @@ p {
   }
 }
 
+/* Loading animation */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Typing animations */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 #compliment {
   transition: all 0.3s ease;
   min-height: 100px;
@@ -168,6 +231,7 @@ p {
   align-items: center;
   text-align: center;
   padding: 0 20px;
+  color: #333;
 }
 
 @keyframes typing {
@@ -198,6 +262,7 @@ p {
   cursor: pointer;
   font-weight: bold;
   transition: transform 0.2s;
+  font-family: inherit;
 }
 
 .share-btn:hover {
@@ -214,6 +279,10 @@ p {
   color: white;
 }
 
+#aboutTitle {
+  font-family: "Darumadrop One", cursive !important;
+}
+
 .about-section {
   background-color: white;
   padding: 1.5rem;
@@ -221,11 +290,16 @@ p {
   margin: 2rem auto;
   max-width: 600px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: normal;
 }
 
 .about-section h3 {
   color: #ff2d75;
   margin-bottom: 0.5rem;
+}
+
+#aboutText {
+  color: #333;
 }
 
 .follow-section {
@@ -245,13 +319,6 @@ p {
 
 .follow-container {
   display: flex;
-}
-
-.follow-container img {
-  display: inline;
-  width: 80px;
-  height: auto;
-  transform: translateY(8px);
 }
 
 .github,
