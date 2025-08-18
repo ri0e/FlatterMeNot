@@ -8,7 +8,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-app.use(express.static(path.join(__dirname, "public")));
 app.use(cors());
 app.use(express.json());
 
@@ -33,13 +32,22 @@ Make the compliment sarcastic, teasing, or slightly mocking, depending on ${leve
 Do NOT start your response with phrases like "Here is a compliment" or "Your compliment is". 
 Keep it too short and funny.`,
         },
-        { role: "user", content: "Give me one so short mocking." },
+        {
+          role: "user",
+          content: `Give me one short mocking compliment at ${level} level.`,
+        },
       ],
     });
 
     console.log("Ollama response:", response);
 
-    res.json({ compliment: response.message?.content || "No response" });
+    // Safely extract the message content
+    const compliment =
+      response?.message?.content ||
+      response?.choices?.[0]?.message?.content ||
+      "No response";
+
+    res.json({ compliment });
   } catch (err) {
     console.error("Ollama error:", err);
     res
@@ -54,4 +62,3 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
