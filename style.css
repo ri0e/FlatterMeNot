@@ -346,15 +346,6 @@ body {
   color: #333;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 .counter {
   margin: 1rem 0;
   color: #6a4c93;
@@ -659,3 +650,4 @@ footer {
     padding: 0.7rem;
   }
 }
+
