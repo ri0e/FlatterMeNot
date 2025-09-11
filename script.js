@@ -18,7 +18,7 @@ import { portuguese } from "./translations/Portuguese.js";
 import { russian } from "./translations/Russian.js";
 import { spanish } from "./translations/Spanish.js";
 import { swahili } from "./translations/Swahili.js";
-import { tai } from "./translations/Tai.js";
+import { thai } from "./translations/Thai.js";
 import { tamil } from "./translations/Tamil.js";
 import { urdu } from "./translations/Urdu.js";
 import { turkish } from "./translations/Turkish.js";
@@ -42,7 +42,7 @@ const languageMap = {
   es: spanish,
   sw: swahili,
   tamili: tamil,
-  tai: tai,
+  thai: thai,
   tk: turkish,
   ur: urdu,
   ru: russian,
@@ -61,6 +61,7 @@ const namePrompt = nameModal.querySelector("p");
 const namePlaceholder = document.getElementById("userName");
 const submitBtn = document.getElementById("submitName");
 const languageSelect = document.getElementById("languageSelect");
+const chooseLang = document.getElementById("chooseLang");
 const userNameInput = document.getElementById("userName");
 
 // Main Content Elements
@@ -112,6 +113,7 @@ function updateTextElements() {
   // Update modal text
   nameModal.querySelector("h2").innerHTML = lang.welcome; //+ modalTitle.outerHTML;
   namePrompt.textContent = lang.namePrompt;
+  chooseLang.textContent = lang.chooseLanguage;
   namePlaceholder.placeholder = lang.namePlaceholder;
   submitBtn.textContent = lang.buttonText;
 
