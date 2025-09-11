@@ -149,7 +149,7 @@ async function getCompliment() {
 
   // If all compliments have been used, show message
   if (usedCompliments.size >= lang.compliments.length) {
-    compliment.innerText = lang.allSeen || "You've seen all compliments!";
+    compliment.innerText = lang.allSeen;
     return;
   }
 
@@ -222,7 +222,7 @@ function copyToastNotification() {
   }, 3000);
 }
 
-// Function to add a user's compliment
+// Function to add a user's compliment(needs backend)
 function addUserCompliment() {
   const language = submitLanguageSelect.value;
   const text = userCompliment.value.trim();
@@ -232,10 +232,6 @@ function addUserCompliment() {
       languageMap[currentLanguage].submitComplimentError;
     submitStatus.style.color = "#ff6b6b";
     return;
-  }
-
-  if (!languageMap[language].compliments) {
-    languageMap[language].compliments = [];
   }
 
   languageMap[language].compliments.push(text);
@@ -317,3 +313,4 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   updateTextElements();
 });
+
