@@ -1,5 +1,7 @@
 console.log("hi get out of the console :D");
 
+import { createClient } from "@supabase/supabase-js";
+
 import { english } from "./translations/English.js";
 import { arabic } from "./translations/Arabic.js";
 import { bengali } from "./translations/Bengali.js";
@@ -47,6 +49,13 @@ const languageMap = {
   ur: urdu,
   ru: russian,
 };
+
+// --- INITIALIZE SUPABASE ---
+const SUPABASE_URL = "https://bzdxzsxcyhamekbswmlb.supabase.co";
+const SUPABASE_ANON_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ6ZHh6c3hjeWhhbWVrYnN3bWxiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc5NTQxMTgsImV4cCI6MjA3MzUzMDExOH0.zX6OTd0132PJr9D78zjjT6mNMrDoAKYBnBL0O_bBtro";
+
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // App state
 let currentLanguage = "english";
@@ -149,7 +158,7 @@ async function getCompliment() {
 
   // If all compliments have been used, show message
   if (usedCompliments.size >= lang.compliments.length) {
-    compliment.innerText = lang.allSeen;
+    compliment.innerText = lang.allSeen || "You've seen all compliments!";
     return;
   }
 
@@ -222,8 +231,39 @@ function copyToastNotification() {
   }, 3000);
 }
 
-// Function to add a user's compliment(needs backend)
-function addUserCompliment() {
+// Load compliments from both local files and Supabase
+async function loadCompliments() {
+  try {
+    // Fetch approved compliments from Supabase table
+    const { data, error } = await supabase
+      .from("compliments")
+      .select("text, language")
+      .eq("is_approved", true);
+
+    if (error) {
+      throw error;
+    }
+
+    // Add the fetched compliments to the existing languageMap
+    data.forEach((compliment) => {
+      if (languageMap[compliment.language]) {
+        // Avoid adding duplicates if already present
+        if (
+          !languageMap[compliment.language].compliments.includes(
+            compliment.text
+          )
+        ) {
+          languageMap[compliment.language].compliments.push(compliment.text);
+        }
+      }
+    });
+  } catch (err) {
+    console.error("Error loading user compliments:", err);
+  }
+}
+
+// Function to add a user's compliment TO SUPABASE
+async function addUserCompliment() {
   const language = submitLanguageSelect.value;
   const text = userCompliment.value.trim();
 
@@ -234,20 +274,26 @@ function addUserCompliment() {
     return;
   }
 
-  languageMap[language].compliments.push(text);
+  try {
+    // Insert the new compliment into the 'compliments' table
+    const { data, error } = await supabase
+      .from("compliments")
+      .insert([{ text: text, language: language }]);
 
-  // Clear and show success
-  userCompliment.value = "";
-  submitStatus.textContent =
-    languageMap[currentLanguage].submitComplimentSuccess;
-  submitStatus.style.color = "#51cf66";
+    if (error) {
+      throw error;
+    }
 
-  // Reset status message after 3 seconds
-  setTimeout(() => {
-    submitStatus.textContent = "";
-  }, 3000);
+    userCompliment.value = "";
+    submitStatus.textContent =
+      languageMap[currentLanguage].submitComplimentSuccess;
+    submitStatus.style.color = "#51cf66";
+  } catch (err) {
+    console.error("Error adding compliment:", err);
+    submitStatus.textContent = "Oops! Something went wrong.";
+    submitStatus.style.color = "#ff6b6b";
+  }
 }
-
 // Event Listeners
 submitBtn.addEventListener("click", function () {
   const name = userNameInput.value.trim();
@@ -283,6 +329,7 @@ languageSelect.addEventListener("change", function () {
 
 // Initialize app
 document.addEventListener("DOMContentLoaded", async function () {
+  await loadCompliments();
   // Show modal on page load
   nameModal.style.display = "flex";
 
@@ -313,4 +360,3 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   updateTextElements();
 });
-
