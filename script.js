@@ -1,6 +1,6 @@
 console.log("hi get out of the console :D");
 
-import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.26.0/dist/module/supabase.js";
+import { createClient } from 'https://unpkg.com/@supabase/supabase-js@2.57.4/dist/supabase.mjs';
 
 import { english } from "./translations/English.js";
 import { arabic } from "./translations/Arabic.js";
@@ -360,6 +360,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   updateTextElements();
 });
+
 
 
 
