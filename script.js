@@ -1,7 +1,5 @@
 console.log("hi get out of the console :D");
 
-import { createClient } from "@supabase/supabase-js";
-
 import { english } from "./translations/English.js";
 import { arabic } from "./translations/Arabic.js";
 import { bengali } from "./translations/Bengali.js";
@@ -55,7 +53,7 @@ const SUPABASE_URL = "https://bzdxzsxcyhamekbswmlb.supabase.co";
 const SUPABASE_ANON_KEY =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ6ZHh6c3hjeWhhbWVrYnN3bWxiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc5NTQxMTgsImV4cCI6MjA3MzUzMDExOH0.zX6OTd0132PJr9D78zjjT6mNMrDoAKYBnBL0O_bBtro";
 
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // App state
 let currentLanguage = "english";
@@ -360,3 +358,4 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   updateTextElements();
 });
+
