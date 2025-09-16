@@ -114,7 +114,7 @@ const usedCompliments = new Set();
 // --- TRANSLATIONS ---
 
 function updateTextElements() {
-  const lang = languageMap[currentLanguage];
+  const lang = languageMap[currentLanguage] || languageMap["en"];
 
   // Set language attribute on <html> tag
   document.documentElement.lang = currentLanguage;
@@ -360,5 +360,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   updateTextElements();
 });
+
 
 
