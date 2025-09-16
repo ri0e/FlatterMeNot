@@ -14,7 +14,7 @@ export const arabic = {
   aboutText:
     "نحن نُبدع في تقديم المدائح الساخرة التي تجعلك في حيرة: هل تفرح أم تشعر بالإهانة؟ استمتع!",
   followTitle: "تابعني للمزيد من السخرية— أعني المحتوى هيهي",
-  footerText: `صُنع بحب ❤️ وشيء من السخرية | © 2025 ${FlatterMeNot}`,
+  footerText: `صُنع بحب ❤️ وشيء من السخرية | 2025 ${FlatterMeNot}`,
   buttonText: "لنبدأ!",
   complimentButton: "امدحني",
   twitterButton: "غرّد",
@@ -172,7 +172,7 @@ export const bengali = {
   aboutText:
     "আমরা বিশেষভাবে এমন প্রশংসা করি যা তোমাকে বিভ্রান্ত করবে: খুশি হবে নাকি অপমানিত? উপভোগ করো!",
   followTitle: "আরো ব্যঙ্গাত্মক কন্টেন্ট পেতে আমাকে অনুসরণ করো",
-  footerText: `ভালোবাসা ❤️ আর একটু ব্যঙ্গ দিয়ে তৈরি | © 2025 ${FlatterMeNot}`,
+  footerText: `ভালোবাসা ❤️ আর একটু ব্যঙ্গ দিয়ে তৈরি | 2025 ${FlatterMeNot}`,
   buttonText: "চলো শুরু করি!",
   complimentButton: "আমাকে প্রশংসা করো",
   twitterButton: "টুইট করো",
@@ -285,7 +285,7 @@ export const chineseT = {
   aboutTitle: `關於 ${FlatterMeNot}`,
   aboutText: "我們專注於提供讓你糾結的誇獎：到底該開心還是該生氣？盡情享受吧！",
   followTitle: "關注我獲取更多俏皮——呃，我是說內容",
-  footerText: `用 ❤️ 和一點諷刺製作 | © 2025 ${FlatterMeNot}`,
+  footerText: `用 ❤️ 和一點諷刺製作 | 2025 ${FlatterMeNot}`,
   buttonText: "開始吧!",
   complimentButton: "誇我一下",
   twitterButton: "發推",
@@ -414,7 +414,7 @@ export const chinese = {
   aboutTitle: `关于 ${FlatterMeNot}`,
   aboutText: "我们专注于提供让你纠结的夸奖：到底该开心还是该生气？尽情享受吧！",
   followTitle: "关注我获取更多俏皮——呃，我是说内容",
-  footerText: `用 ❤️ 和一点讽刺制作 | © 2025 ${FlatterMeNot}`,
+  footerText: `用 ❤️ 和一点讽刺制作 | 2025 ${FlatterMeNot}`,
   buttonText: "开始吧!",
   complimentButton: "夸我一下",
   twitterButton: "发推",
@@ -525,7 +525,7 @@ export const english = {
   aboutText:
     "We specialize in backhanded compliments that make you question if you should feel good or insulted. Enjoy!",
   followTitle: "Follow Me for More Sass— I Mean Content hehe",
-  footerText: "Made with ❤️ and sarcasm | © 2025 FlatterMeNot!",
+  footerText: "Made with ❤️ and sarcasm | 2025 FlatterMeNot!",
   buttonText: "Let's Go!",
   complimentButton: "Compliment Me",
   twitterButton: "Tweet",
@@ -994,7 +994,7 @@ export const farisi = {
   aboutText:
     "ما در ارائه تعریف‌های طنزآمیز تخصص داریم که شما را گیج می‌کند: باید خوشحال شوید یا احساس توهین کنید؟ لذت ببرید!",
   followTitle: "برای دیدن محتوای طنزآمیز بیشتر، مرا دنبال کنید",
-  footerText: `ساخته شده با ❤️ و کمی طنز | © 2025 ${FlatterMeNot}`,
+  footerText: `ساخته شده با ❤️ و کمی طنز | 2025 ${FlatterMeNot}`,
   buttonText: "بیایید شروع کنیم!",
   complimentButton: "من را تحسین کن",
   twitterButton: "توییت",
@@ -1099,7 +1099,7 @@ export const french = {
   aboutText:
     "Nous sommes spécialisés dans les compliments sarcastiques qui te feront hésiter : dois-tu être heureux ou vexé ? Profite-en !",
   followTitle: "Suis-moi pour plus de sarcasme — enfin, de contenu",
-  footerText: "Fait avec amour et sarcasme | © 2025 FlatterMeNot!",
+  footerText: "Fait avec amour et sarcasme | 2025 FlatterMeNot!",
   buttonText: "Commençons!",
   complimentButton: "Complimente-moi",
   twitterButton: "Tweeter",
@@ -1219,7 +1219,7 @@ export const german = {
   aboutText:
     "Wir sind spezialisiert auf sarkastische Komplimente, bei denen du dich fragst: Soll ich mich freuen oder beleidigt fühlen? Viel Spaß!",
   followTitle: "Folge mir für mehr Sarkasmus — äh, ich meine Inhalte",
-  footerText: "Gemacht mit ❤️ und Sarkasmus | © 2025 FlatterMeNot!",
+  footerText: "Gemacht mit ❤️ und Sarkasmus | 2025 FlatterMeNot!",
   buttonText: "Los geht’s!",
   complimentButton: "Kompliment geben",
   twitterButton: "Tweeten",
@@ -1341,7 +1341,7 @@ export const hindi = {
   aboutText:
     "हम ऐसी प्रशंसा में माहिर हैं जो आपको उलझन में डाल दे: खुश हों या अपमानित? आनंद लें!",
   followTitle: "और व्यंग्यात्मक सामग्री के लिए मुझे फॉलो करें — मतलब सामग्री",
-  footerText: `प्यार ❤️ और व्यंग्य के साथ बनाया गया | © 2025 ${FlatterMeNot}`,
+  footerText: `प्यार ❤️ और व्यंग्य के साथ बनाया गया | 2025 ${FlatterMeNot}`,
   buttonText: "शुरू करें!",
   complimentButton: "मुझे प्रशंसा दो",
   twitterButton: "ट्वीट करें",
@@ -1475,7 +1475,7 @@ export const indonesian = {
   aboutText:
     "Kami ahli dalam memberikan pujian sarkastik yang membuatmu bingung: senang atau tersinggung? Nikmati saja!",
   followTitle: "Ikuti saya untuk lebih banyak sarkasme— maksud saya, konten",
-  footerText: "Dibuat dengan ❤️ dan sedikit sarkasme | © 2025 FlatterMeNot!",
+  footerText: "Dibuat dengan ❤️ dan sedikit sarkasme | 2025 FlatterMeNot!",
   buttonText: "Mari Mulai!",
   complimentButton: "Pujilah saya",
   twitterButton: "Tweet",
@@ -1577,7 +1577,7 @@ export const japanese = {
   aboutText:
     "私たちは、喜ぶべきか侮辱されるべきか迷わせる皮肉な褒め言葉を提供することを専門としています。お楽しみください！",
   followTitle: "もっと皮肉な—いや、コンテンツを見たいならフォローしてください",
-  footerText: `❤️と少しの皮肉で作成 | © 2025 ${FlatterMeNot}`,
+  footerText: `❤️と少しの皮肉で作成 | 2025 ${FlatterMeNot}`,
   buttonText: "さあ、始めよう！",
   complimentButton: "褒めて！",
   twitterButton: "ツイート",
@@ -1709,7 +1709,7 @@ export const korean = {
   aboutText:
     "우리는 당신을 혼란스럽게 만드는 비꼬는 칭찬을 전문으로 합니다: 기뻐해야 할까요, 아니면 기분 나빠야 할까요? 즐기세요!",
   followTitle: "더 많은 비꼬는 콘텐츠를 원하시면 팔로우하세요",
-  footerText: `❤️와 약간의 풍자로 제작 | © 2025 ${FlatterMeNot}`,
+  footerText: `❤️와 약간의 풍자로 제작 | 2025 ${FlatterMeNot}`,
   buttonText: "시작해요!",
   complimentButton: "칭찬해 주세요",
   twitterButton: "트윗",
@@ -1826,7 +1826,7 @@ export const kurdishKurmanji = {
   aboutText:
     "Em di pîrozbahiyên têkildar de xwedî taybetmendî ne ku te li benda bikaribe: xweşbîn bibî an bêhîs? Bihêvînin!",
   followTitle: "Ji bo zêdetir naverokên têkildar min şop bikin",
-  footerText: "Bi ❤️ û hinek têkildar çêkirî | © 2025 FlatterMeNot!",
+  footerText: "Bi ❤️ û hinek têkildar çêkirî | 2025 FlatterMeNot!",
   buttonText: "Bêyê dest pê bikin!",
   complimentButton: "Min pîroz bike",
   twitterButton: "Tweet bike",
@@ -1909,7 +1909,7 @@ export const kurdishSorani = {
   aboutText:
     "ئێمە تایبەتمان هەیە لە وەستاندنە تەقینەوەکاندا کە دەتەوێت تێبینی بکەیت: خۆشحاڵ بیت یان تەندروست نییە؟ سەیر بکەوە!",
   followTitle: "بۆ زیاتر لە ناوەرۆکی تەقینەوە من لە دەرەوە بگەڕێنەوە",
-  footerText: `بە ❤️ و هەندێک تەقینەوە دروستکراوە | © 2025 ${FlatterMeNot}`,
+  footerText: `بە ❤️ و هەندێک تەقینەوە دروستکراوە | 2025 ${FlatterMeNot}`,
   buttonText: "بەڕێوەبەرەوە!",
   complimentButton: "من پێشوازی بکە",
   twitterButton: "توییت بکە",
@@ -2004,7 +2004,7 @@ export const portuguese = {
   aboutText:
     "Somos especializados em elogios sarcásticos que te deixam em dúvida: você deve se sentir feliz ou ofendido? Aproveite!",
   followTitle: "Siga-me para mais sarcasmo — quero dizer, conteúdo",
-  footerText: "Feito com ❤️ e um pouco de sarcasmo | © 2025 FlatterMeNot!",
+  footerText: "Feito com ❤️ e um pouco de sarcasmo | 2025 FlatterMeNot!",
   buttonText: "Vamos começar!",
   complimentButton: "Me elogie",
   twitterButton: "Tweetar",
@@ -2129,7 +2129,7 @@ export const russian = {
     "Мы специализируемся на саркастических комплиментах, которые заставляют вас задуматься: радоваться или обижаться? Наслаждайтесь!",
   followTitle:
     "Подписывайтесь на меня, чтобы получать больше сарказма — то есть контента",
-  footerText: `Сделано с ❤️ и немного сарказма | © 2025 ${FlatterMeNot}`,
+  footerText: `Сделано с ❤️ и немного сарказма | 2025 ${FlatterMeNot}`,
   buttonText: "Давайте начнем!",
   complimentButton: "Похвали меня",
   twitterButton: "Твитнуть",
@@ -2270,7 +2270,7 @@ export const spanish = {
   aboutText:
     "Nos especializamos en cumplidos sarcásticos que te hacen dudar: ¿deberías sentirte feliz o insultado? ¡Disfruta!",
   followTitle: "Sígueme para más sarcasmo—quiero decir, contenido",
-  footerText: "Hecho con ❤️ y un poco de sarcasmo | © 2025 FlatterMeNot!",
+  footerText: "Hecho con ❤️ y un poco de sarcasmo | 2025 FlatterMeNot!",
   buttonText: "¡Vamos allá!",
   complimentButton: "Hazme un cumplido",
   twitterButton: "Twittear",
@@ -2389,7 +2389,7 @@ export const swahili = {
   aboutText:
     "Tuna utaalamu wa kutoa pongezi za kejeli zinazokufanya ujihisi unashtuka: je, unapaswa kushangilia au kuhisi kukashikiwa? Furahia!",
   followTitle: "Nifuate kwa kejeli zaidi—niseme, yaliyomo",
-  footerText: "Imetengenezwa kwa ❤️ na kejeli kidogo | © 2025 FlatterMeNot!",
+  footerText: "Imetengenezwa kwa ❤️ na kejeli kidogo | 2025 FlatterMeNot!",
   buttonText: "Tuanze!",
   complimentButton: "Nipongezee",
   twitterButton: "Tweet",
@@ -2484,7 +2484,7 @@ export const tamil = {
   aboutText:
     "நாங்கள் மகிழ்ச்சியடைய வேண்டுமா அல்லது அவமரியாதைப்பட்டதாக உணரவேண்டுமா என உங்களை குழப்பும் சிரிப்பூட்டும் பாராட்டுகளில் சிறப்புப் பெற்றோம். அனுபவிக்கவும்!",
   followTitle: "மேலும் சிரிப்பூட்டும் உள்ளடக்கத்திற்கு எனை பின்தொடரவும்",
-  footerText: `அன்புடன் ❤️ மற்றும் சற்று சிரிப்புடன் உருவாக்கப்பட்டது | © 2025 ${FlatterMeNot}`,
+  footerText: `அன்புடன் ❤️ மற்றும் சற்று சிரிப்புடன் உருவாக்கப்பட்டது | 2025 ${FlatterMeNot}`,
   buttonText: "வாங்க ஆரம்பிக்கலாம்!",
   complimentButton: "என்னை பாராட்டவும்",
   twitterButton: "ட்வீட் செய்யவும்",
@@ -2570,7 +2570,7 @@ export const thai = {
   aboutText:
     "เราชำนาญในการให้คำชมแบบเสียดสีที่ทำให้คุณสับสน: ควรดีใจหรือรู้สึกถูกดูถูก? สนุกไปกับมัน!",
   followTitle: "ติดตามฉันเพื่อเนื้อหาเสียดสีเพิ่มเติม",
-  footerText: `สร้างด้วย ❤️ และเสียดสีเล็กน้อย | © 2025 ${FlatterMeNot}`,
+  footerText: `สร้างด้วย ❤️ และเสียดสีเล็กน้อย | 2025 ${FlatterMeNot}`,
   buttonText: "ไปกันเถอะ!",
   complimentButton: "ชมฉัน",
   twitterButton: "ทวีต",
@@ -2672,7 +2672,7 @@ export const turkish = {
   aboutText:
     "Mutlu olmanız mı yoksa alınmanız mı gerektiğini düşündüren alaycı iltifatlarda uzmanız. Keyfini çıkarın!",
   followTitle: "Daha fazla alaycı içerik için beni takip edin",
-  footerText: "❤️ ve biraz alay ile yapıldı | © 2025 FlatterMeNot!",
+  footerText: "❤️ ve biraz alay ile yapıldı | 2025 FlatterMeNot!",
   buttonText: "Hadi başlayalım!",
   complimentButton: "Beni öv",
   twitterButton: "Tweetle",
@@ -2771,7 +2771,7 @@ export const urdu = {
   aboutText:
     "ہم ایسی طنزیہ تعریفوں میں مہارت رکھتے ہیں جو آپ کو الجھن میں ڈالیں: خوش ہونا چاہیے یا ناراض؟ لطف اٹھائیں!",
   followTitle: "مزید طنزیہ مواد کے لیے مجھے فالو کریں",
-  footerText: `محبت ❤️ اور تھوڑا سا طنز کے ساتھ بنایا گیا | © 2025 ${FlatterMeNot}`,
+  footerText: `محبت ❤️ اور تھوڑا سا طنز کے ساتھ بنایا گیا | 2025 ${FlatterMeNot}`,
   buttonText: "آئیے شروع کریں!",
   complimentButton: "میری تعریف کریں",
   twitterButton: "ٹوئٹ کریں",
@@ -2829,3 +2829,4 @@ export const urdu = {
     "آپ آج حیرت انگیز حد تک سنبھلے ہوئے لگتے ہیں",
   ],
 };
+
