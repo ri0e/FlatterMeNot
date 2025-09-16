@@ -64,4 +64,4 @@ This project is open-source and available under the [MIT License](https://www.go
 
 -----
 <br>
-Made with ❤️ and sarcasm by [ri0e](https://github.com/ri0e)
+Made with ❤️ and sarcasm by [Rei](https://github.com/ri0e)
