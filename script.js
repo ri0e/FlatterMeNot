@@ -2,28 +2,28 @@ console.log("hi get out of the console :D");
 
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
-import { english } from "./translations/English.js";
-import { arabic } from "./translations/Arabic.js";
-import { bengali } from "./translations/Bengali.js";
-import { chineseT } from "./translations/Chinese_t.js";
-import { chinese } from "./translations/Chinese.js";
-import { farisi } from "./translations/Farisi.js";
-import { french } from "./translations/French.js";
-import { german } from "./translations/German.js";
-import { hindi } from "./translations/Hindi.js";
-import { indonesian } from "./translations/Indonesian.js";
-import { japanese } from "./translations/Japanese.js";
-import { korean } from "./translations/Korean.js";
-import { kurdishKurmanji } from "./translations/Kurdish_Kurmanji.js";
-import { kurdishSorani } from "./translations/Kurdish_Sorani.js";
-import { portuguese } from "./translations/Portuguese.js";
-import { russian } from "./translations/Russian.js";
-import { spanish } from "./translations/Spanish.js";
-import { swahili } from "./translations/Swahili.js";
-import { thai } from "./translations/Thai.js";
-import { tamil } from "./translations/Tamil.js";
-import { urdu } from "./translations/Urdu.js";
-import { turkish } from "./translations/Turkish.js";
+import { english } from "./translations.js";
+import { arabic } from "./translations.js";
+import { bengali } from "./translations.js";
+import { chineseT } from "./translations.js";
+import { chinese } from "./translations.js";
+import { farisi } from "./translations.js";
+import { french } from "./translations.js";
+import { german } from "./translations.js";
+import { hindi } from "./translations.js";
+import { indonesian } from "./translations.js";
+import { japanese } from "./translations.js";
+import { korean } from "./translations.js";
+import { kurdishKurmanji } from "./translations.js";
+import { kurdishSorani } from "./translations.js";
+import { portuguese } from "./translations.js";
+import { russian } from "./translations.js";
+import { spanish } from "./translations.js";
+import { swahili } from "./translations.js";
+import { thai } from "./translations.js";
+import { tamil } from "./translations.js";
+import { urdu } from "./translations.js";
+import { turkish } from "./translations.js";
 
 const languageMap = {
   en: english,
