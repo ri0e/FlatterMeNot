@@ -57,11 +57,6 @@ const SUPABASE_ANON_KEY =
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-// App state
-let currentLanguage = "en";
-let complimentCount = 0;
-const usedCompliments = new Set();
-
 // --- DOM ELEMENTS ---
 
 // Modal Elements
@@ -110,6 +105,11 @@ modalTitle.style.fontFamily = '"Darumadrop One", cursive';
 
 // Footer
 const footerText = document.getElementById("footerText");
+
+// App state
+let currentLanguage = "en";
+let complimentCount = 0;
+const usedCompliments = new Set();
 
 // --- TRANSLATIONS ---
 
@@ -360,4 +360,5 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   updateTextElements();
 });
+
 
