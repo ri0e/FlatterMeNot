@@ -58,7 +58,7 @@ const SUPABASE_ANON_KEY =
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // App state
-let currentLanguage = "english";
+let currentLanguage = "en";
 let complimentCount = 0;
 const usedCompliments = new Set();
 
@@ -120,7 +120,7 @@ function updateTextElements() {
   document.documentElement.lang = currentLanguage;
 
   // Update modal text
-  nameModal.querySelector("h2").innerHTML = lang.welcome; //+ modalTitle.outerHTML;
+  nameModal.querySelector("h2").innerHTML = lang.welcome;
   namePrompt.textContent = lang.namePrompt;
   chooseLang.textContent = lang.chooseLanguage;
   namePlaceholder.placeholder = lang.namePlaceholder;
@@ -360,3 +360,4 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   updateTextElements();
 });
+
